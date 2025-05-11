@@ -147,7 +147,7 @@ margin: 30px 5px;
 .experience-description, .experience-sub-title{
     color: #757575;
 } 
-.resumr-download-cv{
+.resume-download-cv{
     margin-top: 50px;
 }
 /* Footer Styles */
@@ -164,19 +164,38 @@ footer input[type="text"],footer input[type="email"]{
     border-radius: 5px;
     background-color: white;
     display: block;
-    width: 461px;
-    padding: 18px 300px 18px 30px;
+    width: 100%;
+    padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
 }
 footer textarea{
-    height: 160px;
+    height: 64px;
     border-radius: 5px;
     background-color: white;
     display: block;
-    width: 461px;
-    padding: 18px 300px 18px 30px;
+    width: 100%;
+    padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
-    
+}   
+/* Responsive media quary */
+
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px){
+    .skills-container, .resume-container, footer, .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 10px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],footer input[type="email"], footer textarea {
+        width: calc(100% - 20%);
+    }
+
 }
